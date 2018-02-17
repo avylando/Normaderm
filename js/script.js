@@ -48,22 +48,66 @@ $(document).ready(function() {
     })
 
     //slide3
-    $(".sld3 .b").addClass('animated zoomIn');
-    $(".s1m-plus1").click(function () {
-        $(".b1 p").animate({top:"-14px"},500,function () {
-            $(".sld3 .b1-down").fadeIn(500);
-        })
-    });
-    $(".s1m-plus2").click(function () {
-        $(".b2 p").animate({top:"-17px"},500,function () {
-            $(".sld3 .b2-down").fadeIn(500);
-        })
-    });
-    $(".s1m-plus3").click(function () {
-        $(".b3 p").animate({top:"-10px"},500,function () {
-            $(".sld3 .b3-down").fadeIn(500);
-        })
-    });
+    // function showGraphs() {
+    //     $(".sld4 .gr1s").hide().slideDown(1000)
+    //     $(".sld4 .gr1big").hide().slideDown(1000)
+    //     $(".sld4 .gr2s").hide().slideDown(1000)
+    //     $(".sld4 .gr2big").hide().slideDown(1000)
+    //     $(".sld4 .gr3s").hide().slideDown(1000)
+    //     $(".sld4 .gr3big").hide().slideDown(1000)
+    //     $(".sld4 .gr4s").hide().slideDown(1000)
+    //     $(".sld4 .gr4big").hide().slideDown(1000)
+    //     $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").hide()
+    //     setTimeout(function () {
+    //         $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").fadeIn(300)
+    //     }, 1000)
+    // }
+    // showGraphs();
+    // var ed = $(".sld3 .col-1");
+    // ed.hide();
+    
+    $(".sld3 .col-1").removeClass('col-e');
+    $(".sld3 .rect-1").removeClass('rect-f');
+    $(".sld3 .col-2").removeClass('col-e');
+    $(".sld3 .rect-2").removeClass('rect-f');
+    $(".sld3 .col-3").removeClass('col-e');
+    $(".sld3 .rect-3").removeClass('rect-f');
+    $(".sld3 .s1 .graph-1 .number, .sld3 .s1 .graph-2 .number, .sld3 .s1 .graph-3 .number").hide();
+    setTimeout(function () {
+        $(".sld3 .s1 .graph-1 .number, .sld3 .s1 .graph-2 .number, .sld3 .s1 .graph-3 .number").fadeIn(300);
+    }, 800);
+    
+    $(".sld3 .s0 .lotion").addClass('animated zoomIn');
+    $(".sld3 .block .plus-1").click(function () {
+        $(".sld3 .s1").fadeIn(1000);
+        $(".sld3 .s0").fadeOut(500);
+        setTimeout(function () {
+            showGraphs();
+        }, 1000);
+    })
+
+    $(".sld3 .s1 .x").click(function () {
+        $(".sld3 .s1").fadeOut(500);
+        $(".sld3 .s0").fadeIn(500);
+    })
+
+    
+    showGraphs();
+    // $(".s1m-plus1").click(function () {
+    //     $(".b1 p").animate({top:"-14px"},500,function () {
+    //         $(".sld3 .b1-down").fadeIn(500);
+    //     })
+    // });
+    // $(".s1m-plus2").click(function () {
+    //     $(".b2 p").animate({top:"-17px"},500,function () {
+    //         $(".sld3 .b2-down").fadeIn(500);
+    //     })
+    // });
+    // $(".s1m-plus3").click(function () {
+    //     $(".b3 p").animate({top:"-10px"},500,function () {
+    //         $(".sld3 .b3-down").fadeIn(500);
+    //     })
+    // });
 
     // slide4
     function showGraphs() {
