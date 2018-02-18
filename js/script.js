@@ -48,115 +48,231 @@ $(document).ready(function() {
     })
 
     //slide3
-    // function showGraphs() {
-    //     $(".sld4 .gr1s").hide().slideDown(1000)
-    //     $(".sld4 .gr1big").hide().slideDown(1000)
-    //     $(".sld4 .gr2s").hide().slideDown(1000)
-    //     $(".sld4 .gr2big").hide().slideDown(1000)
-    //     $(".sld4 .gr3s").hide().slideDown(1000)
-    //     $(".sld4 .gr3big").hide().slideDown(1000)
-    //     $(".sld4 .gr4s").hide().slideDown(1000)
-    //     $(".sld4 .gr4big").hide().slideDown(1000)
-    //     $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").hide()
-    //     setTimeout(function () {
-    //         $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").fadeIn(300)
-    //     }, 1000)
-    // }
-    // showGraphs();
-    // var ed = $(".sld3 .col-1");
-    // ed.hide();
-    
-    $(".sld3 .col-1").removeClass('col-e');
-    $(".sld3 .rect-1").removeClass('rect-f');
-    $(".sld3 .col-2").removeClass('col-e');
-    $(".sld3 .rect-2").removeClass('rect-f');
-    $(".sld3 .col-3").removeClass('col-e');
-    $(".sld3 .rect-3").removeClass('rect-f');
-    $(".sld3 .s1 .graph-1 .number, .sld3 .s1 .graph-2 .number, .sld3 .s1 .graph-3 .number").hide();
-    setTimeout(function () {
-        $(".sld3 .s1 .graph-1 .number, .sld3 .s1 .graph-2 .number, .sld3 .s1 .graph-3 .number").fadeIn(300);
-    }, 800);
-    
     $(".sld3 .s0 .lotion").addClass('animated zoomIn');
-    $(".sld3 .block .plus-1").click(function () {
-        $(".sld3 .s1").fadeIn(1000);
-        $(".sld3 .s0").fadeOut(500);
-        setTimeout(function () {
-            showGraphs();
-        }, 1000);
-    })
 
+    $(".sld3 .s0 .plus-1").click(function () {
+        $(".sld3 .s0").fadeOut(500);
+        $(".sld3 .s1").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s1 .col").removeClass('col-e');
+            $(".sld3 .s1 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s1 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s1 .graph .number").fadeIn(300);
+        }, 800);
+    })
     $(".sld3 .s1 .x").click(function () {
         $(".sld3 .s1").fadeOut(500);
         $(".sld3 .s0").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s1 .col").addClass('col-e');
+            $(".sld3 .s1 .rect").addClass('rect-f');
+        }, 300);
+    })
+    $(".sld3 .s1 .p").click(function () {
+        $(".sld3 .s1 .protocol").fadeIn(500);
+    })
+    $(".sld3 .s1 .pr-x").click(function () {
+        $(".sld3 .s1 .protocol").fadeOut(500);
+    })
+    $(".sld3 .s1 .button-off").click(function () {
+        $(".sld3 .s1").fadeOut(500);
+        $(".sld3 .s2").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s2 .col").removeClass('col-e');
+            $(".sld3 .s2 .rect").removeClass('rect-f');
+            $(".sld3 .s1 .col").addClass('col-e');
+            $(".sld3 .s1 .rect").addClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s2 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s2 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s2 .button-off").click(function () {
+        $(".sld3 .s2").fadeOut(500);
+        $(".sld3 .s1").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s1 .col").removeClass('col-e');
+            $(".sld3 .s1 .rect").removeClass('rect-f');
+            $(".sld3 .s2 .col").addClass('col-e');
+            $(".sld3 .s2 .rect").addClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s1 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s1 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s2 .x").click(function () {
+        $(".sld3 .s2").fadeOut(500);
+        $(".sld3 .s0").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s2 .col").addClass('col-e');
+            $(".sld3 .s2 .rect").addClass('rect-f');
+        }, 300);
+    })
+    $(".sld3 .s2 .p").click(function () {
+        $(".sld3 .s2 .protocol").fadeIn(500);
+    })
+    $(".sld3 .s2 .pr-x").click(function () {
+        $(".sld3 .s2 .protocol").fadeOut(500);
     })
 
-    
-    showGraphs();
-    // $(".s1m-plus1").click(function () {
-    //     $(".b1 p").animate({top:"-14px"},500,function () {
-    //         $(".sld3 .b1-down").fadeIn(500);
-    //     })
-    // });
-    // $(".s1m-plus2").click(function () {
-    //     $(".b2 p").animate({top:"-17px"},500,function () {
-    //         $(".sld3 .b2-down").fadeIn(500);
-    //     })
-    // });
-    // $(".s1m-plus3").click(function () {
-    //     $(".b3 p").animate({top:"-10px"},500,function () {
-    //         $(".sld3 .b3-down").fadeIn(500);
-    //     })
-    // });
+    $(".sld3 .s0 .plus-2").click(function () {
+        $(".sld3 .s0").fadeOut(500);
+        $(".sld3 .s3").fadeIn(500);
+    })
+    $(".sld3 .s3 .x").click(function () {
+        $(".sld3 .s3").fadeOut(500);
+        $(".sld3 .s0").fadeIn(500);
+    })
+    $(".sld3 .s3 .block-1 .plus").click(function () {
+        $(".sld3 .s3").fadeOut(500);
+        $(".sld3 .s3-1").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-1 .col").removeClass('col-e');
+            $(".sld3 .s3-1 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s3-1 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s3-1 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s3-1 .x").click(function () {
+        $(".sld3 .s3-1").fadeOut(500);
+        $(".sld3 .s3").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-1 .col").addClass('col-e');
+            $(".sld3 .s3-1 .rect").addClass('rect-f');
+        }, 300);
+    })
+
+    $(".sld3 .s3 .block-2 .plus").click(function () {
+        $(".sld3 .s3").fadeOut(500);
+        $(".sld3 .s3-2").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-2 .col").removeClass('col-e');
+            $(".sld3 .s3-2 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s3-2 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s3-2 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s3-2 .x").click(function () {
+        $(".sld3 .s3-2").fadeOut(500);
+        $(".sld3 .s3").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-2 .col").addClass('col-e');
+            $(".sld3 .s3-2 .rect").addClass('rect-f');
+        }, 300);
+    })
+
+    $(".sld3 .s3 .block-3 .plus").click(function () {
+        $(".sld3 .s3").fadeOut(500);
+        $(".sld3 .s3-3").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-3 .col").removeClass('col-e');
+            $(".sld3 .s3-3 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s3-3 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s3-3 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s3-3 .x").click(function () {
+        $(".sld3 .s3-3").fadeOut(500);
+        $(".sld3 .s3").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s3-3 .col").addClass('col-e');
+            $(".sld3 .s3-3 .rect").addClass('rect-f');
+        }, 300);
+    })
+
+    $(".sld3 .s3 .p").click(function () {
+        $(".sld3 .s3 .protocol").fadeIn(500);
+    })
+    $(".sld3 .s3 .pr-x").click(function () {
+        $(".sld3 .s3 .protocol").fadeOut(500);
+    })
+
+    $(".sld3 .s0 .plus-4").click(function () {
+        $(".sld3 .s0").fadeOut(500);
+        $(".sld3 .s4").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s4 .col").removeClass('col-e');
+            $(".sld3 .s4 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s4 .gr-item .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s4 .gr-item .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s4 .x").click(function () {
+        $(".sld3 .s4").fadeOut(500);
+        $(".sld3 .s0").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s4 .col").addClass('col-e');
+            $(".sld3 .s4 .rect").addClass('rect-f');
+        }, 300);
+    })
+    $(".sld3 .s4 .p").click(function () {
+        $(".sld3 .s4 .popup").fadeIn(500);
+    })
+    $(".sld3 .s4 .popup .pr-x").click(function () {
+        $(".sld3 .s4 .popup").fadeOut(500);
+    })
+
+    $(".sld3 .s0 .plus-3").click(function () {
+        $(".sld3 .s0").fadeOut(500);
+        $(".sld3 .s5").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s5 .col").removeClass('col-e');
+            $(".sld3 .s5 .rect").removeClass('rect-f');
+        }, 300);
+        
+        $(".sld3 .s5 .graph .number").hide();
+        setTimeout(function () {
+            $(".sld3 .s5 .graph .number").fadeIn(300);
+        }, 800);
+    })
+    $(".sld3 .s5 .x").click(function () {
+        $(".sld3 .s5").fadeOut(500);
+        $(".sld3 .s0").fadeIn(500);
+        setTimeout(function () {
+            $(".sld3 .s5 .col").addClass('col-e');
+            $(".sld3 .s5 .rect").addClass('rect-f');
+        }, 300);
+    })
+    $(".sld3 .s5 .p").click(function () {
+        $(".sld3 .s5 .protocol").fadeIn(500);
+    })
+    $(".sld3 .s5 .protocol .pr-x").click(function () {
+        $(".sld3 .s5 .protocol").fadeOut(500);
+    })
+
 
     // slide4
-    function showGraphs() {
-        $(".sld4 .gr1s").hide().slideDown(1000)
-        $(".sld4 .gr1big").hide().slideDown(1000)
-        $(".sld4 .gr2s").hide().slideDown(1000)
-        $(".sld4 .gr2big").hide().slideDown(1000)
-        $(".sld4 .gr3s").hide().slideDown(1000)
-        $(".sld4 .gr3big").hide().slideDown(1000)
-        $(".sld4 .gr4s").hide().slideDown(1000)
-        $(".sld4 .gr4big").hide().slideDown(1000)
-        $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").hide()
-        setTimeout(function () {
-            $(".sld4 .t4,.sld4 .t5 ,.sld4 .t6,.sld4 .t7").fadeIn(300)
-        }, 1000)
-    }
-    showGraphs();
-
-    $(".sld4 .block1 .p").click(function () {
-        $(".sld4 .popup1").fadeIn(500);
-        $(".sld4 .block1").css({opacity:0.3})
-        $(".popup1 .x").click(function () {
-            $(".sld4 .popup1").fadeOut(500);
-            $(".sld4 .block1").css({opacity:1})
-        })
-    })
-    $(".sld4 .block2 .p").click(function () {
-        $(".sld4 .popup2").fadeIn(500);
-        $(".sld4 .block2").css({opacity:0.3})
-        $(".popup2 .x").click(function () {
-            $(".sld4 .popup2").fadeOut(500);
-            $(".sld4 .block2").css({opacity:1})
-        })
-    })
-    $(".sld4 .block1 .button2").click(function () {
-        showGraphs();
-        $(".sld4 .block1").fadeOut(300)
-        $(".sld4 .block2").fadeIn(500)
-    })
-    $(".sld4 .block2 .button2").click(function () {
-        showGraphs();
-        $(".sld4 .block2").fadeOut(300)
-        $(".sld4 .block1").fadeIn(500)
-    })
+    $(".sld4 .s0 .lotion").addClass('animated slideInLeft');
 
     //slide5
-
-    $(".sld5 .b0").addClass('animated zoomIn')
-
+    $(".sld5 .s0 .block-1 .arrow").click(function () {
+        $(".sld5 .s0 .block-1").toggleClass('block-wide');
+    })
+    $(".sld5 .s0 .block-2 .arrow").click(function () {
+        $(".sld5 .s0 .block-2").toggleClass('block-wide');
+    })
+    $(".sld5 .s0 .block-3 .arrow").click(function () {
+        $(".sld5 .s0 .block-3").toggleClass('block-wide');
+    })
 
     // slide6
     $(".sld6 .back").addClass('animated fadeInUp')
