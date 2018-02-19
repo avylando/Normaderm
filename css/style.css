@@ -267,6 +267,11 @@ body {
   font-size: 22px;
   font-family: "Gilroy ExtraBold";
 }
+.bold48 {
+  font-size: 48px;
+  font-family: "Gilroy ExtraBold";
+  letter-spacing: 7px;
+}
 .light16 {
   font-size: 16px;
 }
@@ -362,7 +367,6 @@ body {
     -moz-transform: rotate(-90deg);
     transform: rotate(-90deg);
     overflow: hidden;
-    background-image: linear-gradient(to left, #ffffff 0%, #ffffff 50%, #7cc7b6 60%, #7cc7b6 100%);
   }
   .sld1 .s1 input[type=range]:focus {
     outline: none;
