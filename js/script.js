@@ -59,8 +59,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s1 .graph .number").hide();
+        $(".sld3 .s1 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s1 .graph .number").fadeIn(300);
+            $(".sld3 .s1 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s1 .x").click(function () {
@@ -85,11 +87,14 @@ $(document).ready(function() {
             $(".sld3 .s2 .rect").removeClass('rect-f');
             $(".sld3 .s1 .col").addClass('col-e');
             $(".sld3 .s1 .rect").addClass('rect-f');
+            $(".sld3 .s1 .rects-l").hide();
         }, 300);
         
         $(".sld3 .s2 .graph .number").hide();
+        $(".sld3 .s2 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s2 .graph .number").fadeIn(300);
+            $(".sld3 .s2 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s2 .button-off").click(function () {
@@ -103,8 +108,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s1 .graph .number").hide();
+        $(".sld3 .s2 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s1 .graph .number").fadeIn(300);
+            $(".sld3 .s1 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s2 .x").click(function () {
@@ -139,8 +146,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s3-1 .graph .number").hide();
+        $(".sld3 .s3-1 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s3-1 .graph .number").fadeIn(300);
+            $(".sld3 .s3-1 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s3-1 .x").click(function () {
@@ -161,8 +170,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s3-2 .graph .number").hide();
+        $(".sld3 .s3-2 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s3-2 .graph .number").fadeIn(300);
+            $(".sld3 .s3-2 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s3-2 .x").click(function () {
@@ -183,8 +194,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s3-3 .graph .number").hide();
+        $(".sld3 .s3-3 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s3-3 .graph .number").fadeIn(300);
+            $(".sld3 .s3-3 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s3-3 .x").click(function () {
@@ -213,7 +226,7 @@ $(document).ready(function() {
         
         $(".sld3 .s4 .gr-item .number").hide();
         setTimeout(function () {
-            $(".sld3 .s4 .gr-item .number").fadeIn(300);
+            $(".sld3 .s4 .gr-item .number").fadeIn(1000);
         }, 800);
     })
     $(".sld3 .s4 .x").click(function () {
@@ -240,8 +253,10 @@ $(document).ready(function() {
         }, 300);
         
         $(".sld3 .s5 .graph .number").hide();
+        $(".sld3 .s5 .rects-l").hide();
         setTimeout(function () {
             $(".sld3 .s5 .graph .number").fadeIn(300);
+            $(".sld3 .s5 .rects-l").fadeIn(800);
         }, 800);
     })
     $(".sld3 .s5 .x").click(function () {

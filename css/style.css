@@ -724,7 +724,7 @@ body {
 
   .sld3 .s1 {
     display: none;
-    background-image: url('../images/3/bg2.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
 
   .sld3 .s1 .button,
@@ -785,6 +785,7 @@ body {
     top: 337px;
     width: 220px;
     height: 326px;
+    z-index: 1;
   }
   .sld3 .s1 .graph .rect-full,
   .sld3 .s2 .graph .rect-full {
@@ -910,6 +911,16 @@ body {
     top: 74px;
     right: 10px;
   }
+  .sld3 .s1 .rects-l {
+    position: absolute;
+    top: 313px;
+    left: 231px;
+    width: 649px;
+    height: 337px;
+    background-image: url('../images/3/d1-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
+  }
   .sld3 .p {
     position: absolute;
     top: 256px;
@@ -1021,7 +1032,7 @@ body {
 
   .sld3 .s2 {
     display: none;
-    background-image: url('../images/3/bg2-2.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
   .sld3 .s2 .button-off {
     left: 34px;
@@ -1082,6 +1093,16 @@ body {
   .sld3 .s2 .graph-3 .number {
     top: 64px;
     right: 2px;
+  }
+  .sld3 .s2 .rects-l {
+    position: absolute;
+    top: 313px;
+    left: 231px;
+    width: 650px;
+    height: 337px;
+    background-image: url('../images/3/d2-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
   }
 
   .sld3 .s3 {
@@ -1144,7 +1165,7 @@ body {
 
   .sld3 .s3-1 {
     display: none;
-    background-image: url('../images/3/bg3-1.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
   .sld3 .s3-1 .head {
     position: absolute;
@@ -1184,6 +1205,7 @@ body {
     top: 3px;
     width: 105px;
     height: 100%;
+    z-index: 1;
   }
   .sld3 .s3-1 .table-left .graph-1 {
     left: 52px;
@@ -1231,7 +1253,7 @@ body {
     top: 0;
     left: 0;
     width: 15px;
-    margin-left: 7px;
+    margin-left: 8px;
     /* background-size: 100% 100%; */
     background-position: 0 0;
   }
@@ -1456,11 +1478,21 @@ body {
     bottom: 6px;
     right: -6px;
   }
+  .sld3 .s3-1 .rects-l {
+    position: absolute;
+    top: 338px;
+    left: 133px;
+    width: 780px;
+    height: 282px;
+    background-image: url('../images/3/d4-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
+  }
 
 
   .sld3 .s3-2 {
     display: none;
-    background-image: url('../images/3/bg3-2.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
   .sld3 .s3-2 .table,
   .sld3 .s3-3 .table {
@@ -1477,6 +1509,7 @@ body {
     top: 3px;
     width: 205px;
     height: 100%;
+    z-index: 1;
   }
   .sld3 .s3-2 .table .graph-1,
   .sld3 .s3-3 .table .graph-1 {
@@ -1676,11 +1709,21 @@ body {
     width: 495px;
     height: 354px;
   }
+  .sld3 .s3-2 .rects-l {
+    position: absolute;
+    top: 435px;
+    left: 231px;
+    width: 637px;
+    height: 185px;
+    background-image: url('../images/3/d5-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
+  }
 
 
   .sld3 .s3-3 {
     display: none;
-    background-image: url('../images/3/bg3-3.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
   .sld3 .s3-3 .table .graph-1 .gr-item-0 .rect-0 {
     height: 244px;
@@ -1769,6 +1812,16 @@ body {
   }
   .sld3 .s3-3 .graph-3 .number {
     top: 62px;
+  }
+  .sld3 .s3-3 .rects-l {
+    position: absolute;
+    top: 367px;
+    left: 231px;
+    width: 637px;
+    height: 253px;
+    background-image: url('../images/3/d6-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
   }
 
   .sld3 .s4 {
@@ -1981,7 +2034,7 @@ body {
 
   .sld3 .s5 {
     display: none;
-    background-image: url('../images/3/bg5.jpg');
+    background-image: url('../images/3/bg2u.jpg');
   }
   .sld3 .s5 .ttl {
     position: absolute;
@@ -2021,6 +2074,7 @@ body {
     bottom: 6px;
     width: 217px;
     height: 100%;
+    z-index: 1;
   }
   .sld3 .s5 .table .graph-1 {
     left: 174px;
@@ -2149,6 +2203,16 @@ body {
     position: absolute;
     top: 546px;
     left: 24px;
+  }
+  .sld3 .s5 .rects-l {
+    position: absolute;
+    top: 360px;
+    left: 294px;
+    width: 507px;
+    height: 355px;
+    background-image: url('../images/3/d3-loupe.png');
+    z-index: 0;
+    opacity: 0.4;
   }
 
   .sld4 .s0 {
