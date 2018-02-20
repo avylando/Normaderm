@@ -25,17 +25,27 @@ $(document).ready(function() {
             + 'color-stop(' + val + ', #fff)'
             + ')'
         );
-        setTimeout(function () {
-            $('input[type="range"]').fadeOut(500);
-            $('.sld1 .s1 .scale').fadeOut(500);
-            $(".sld1 .s1 .title1").fadeOut(500);
-            $(".sld1 .s1 .title2").fadeIn(500);
-            $(".sld1 .s1 .lotion").fadeIn(500);
-        }, 300);
+        var value = $(this).val();
+        switch(value) {
+            case '10': $('.sld1 .range-plus').css('top', '485px').fadeIn(); break;
+            case '20': $('.sld1 .range-plus').css('top', '354px').fadeIn(); break;
+            case '30': $('.sld1 .range-plus').css('top', '222px').fadeIn(); break;
+            case '40': $('.sld1 .range-plus').css('top', '90px').fadeIn(); break;
+        }
+    });
+
+    $('.sld1 .range-plus').click(function () {
+        $('.sld1 .range-plus').fadeOut(500);
+        $('input[type="range"]').fadeOut(500);
+        $('.sld1 .s1 .scale').fadeOut(500);
+        $(".sld1 .s1 .title1").fadeOut(500);
+        $(".sld1 .s1 .title2").fadeIn(500);
+        $(".sld1 .s1 .lotion").fadeIn(500);
     });
 
     // slide2
     $(".sld2 .list1 .plus").click(function () {
+        $(".sld2 .rect-1").fadeOut(500);
         $(".sld2 .popup1").fadeIn(500);
     })
 

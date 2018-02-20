@@ -165,7 +165,7 @@ table {
   clear: both;
 }
 @font-face {
-  font-family: Gilroy;
+  font-family: "Gilroy ExtraBold";
   src: url("../shared/Gilroy-ExtraBold.eot");
   src: url("../shared/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../shared/Gilroy-ExtraBold.woff") format("woff"), url("../shared/Gilroy-ExtraBold.ttf") format("truetype");
   font-weight: normal;
@@ -399,7 +399,7 @@ body {
   }
   .sld1 .s1 .title1 {
     position: absolute;
-    top: 100px;
+    top: 115px;
     left: 50px;
     text-transform: uppercase;
   }
@@ -465,6 +465,18 @@ body {
     height: 600px;
     background-image: url('../images/1/lotion.png');
   }
+  .sld1 .s1 .range-plus {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 142px;
+    width: 92px;
+    height: 92px;
+    background-image: url('../images/1/range-plus.png');
+    background-position: center center;
+    background-size: 80%;
+    cursor: pointer;
+  }
 
 .sld2 {
   background-image: url("../images/2/bg.jpg");
@@ -489,10 +501,19 @@ body {
     text-align: right;
     text-transform: uppercase;
   }
+  .sld2 .rect-1 {
+    position: absolute;
+    top: 173px;
+    left: 18px;
+    width: 701px;
+    height: 273px;
+    background-image: url('../images/2/rect-1.png');
+  }
   .sld2 .list1 {
     top: 210px;
     left: 50px;
     width: 260px;
+    z-index: 1;
   }
   .sld2 .list1 .li2 {
     margin-top: 30px;
@@ -2240,7 +2261,7 @@ body {
     width: 419px;
     height: 559px;
     background-image: url('../images/4/lotion.png');
-    animation-duration: 1s;
+    animation-duration: 2s;
   }
 
   .sld5 .s0 {
