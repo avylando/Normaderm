@@ -165,7 +165,7 @@ table {
   clear: both;
 }
 @font-face {
-  font-family: "Gilroy ExtraBold";
+  font-family: Gilroy;
   src: url("../shared/Gilroy-ExtraBold.eot");
   src: url("../shared/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../shared/Gilroy-ExtraBold.woff") format("woff"), url("../shared/Gilroy-ExtraBold.ttf") format("truetype");
   font-weight: normal;
@@ -245,31 +245,31 @@ body {
 }
 .bold16 {
   font-size: 16px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold18 {
   font-size: 18px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold32 {
   font-size: 32px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold24 {
   font-size: 24px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold14 {
   font-size: 14px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold22 {
   font-size: 22px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
 }
 .bold48 {
   font-size: 48px;
-  font-family: "Gilroy ExtraBold";
+  font-weight: 800;
   letter-spacing: 7px;
 }
 .light16 {
@@ -469,12 +469,13 @@ body {
     display: none;
     position: absolute;
     z-index: 10;
-    right: 142px;
+    right: 143px;
     width: 92px;
     height: 92px;
     background-image: url('../images/1/range-plus.png');
     background-position: center center;
     background-size: 80%;
+    background-repeat: no-repeat;
     cursor: pointer;
   }
 
