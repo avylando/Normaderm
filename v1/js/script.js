@@ -27,10 +27,11 @@ $(document).ready(function() {
         );
         var value = $(this).val();
         switch(value) {
-            case '10': $('.sld1 .range-plus').css('top', '485px').fadeIn(); break;
-            case '20': $('.sld1 .range-plus').css('top', '354px').fadeIn(); break;
-            case '30': $('.sld1 .range-plus').css('top', '222px').fadeIn(); break;
-            case '40': $('.sld1 .range-plus').css('top', '90px').fadeIn(); break;
+            // case '0': $('.sld1 .range-plus').css('top', '616px').fadeIn(); break;
+            case '10': $('.sld1 .range-plus').css('top', '484px').fadeIn(); break;
+            case '20': $('.sld1 .range-plus').css('top', '353px').fadeIn(); break;
+            case '30': $('.sld1 .range-plus').css('top', '221px').fadeIn(); break;
+            case '40': $('.sld1 .range-plus').css('top', '89px').fadeIn(); break;
         }
     });
 
