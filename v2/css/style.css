@@ -2635,10 +2635,10 @@ body {
     position: absolute;
     bottom: 44px;
   }
-  .sld6 .s1 .tones-1 {
+  .sld6 .s1 .tones-l {
     left: 242px;
   }
-  .sld6 .s1 .tones-2 {
+  .sld6 .s1 .tones-r {
     left: 715px;
   }
   .sld6 .s1 .tones li {
@@ -2652,17 +2652,29 @@ body {
     width: 30px;
     height: 30px;
   }
-  .sld6 .s1 .tones .item1 .tone-img {
+  .sld6 .s1 .tones-l .item1 .tone-img {
     background-image: url('../images/6/tone-1.png');
   }
-  .sld6 .s1 .tones .item2 .tone-img {
+  .sld6 .s1 .tones-l .item2 .tone-img {
     background-image: url('../images/6/tone-2.png');
   }
-  .sld6 .s1 .tones .item3 .tone-img {
+  .sld6 .s1 .tones-l .item3 .tone-img {
     background-image: url('../images/6/tone-3.png');
   }
-  .sld6 .s1 .tones .item4 .tone-img {
+  .sld6 .s1 .tones-l .item4 .tone-img {
     background-image: url('../images/6/tone-4.png');
+  }
+  .sld6 .s1 .tones-r .item1 .tone-img {
+    background-image: url('../images/6/tone-1-r.png');
+  }
+  .sld6 .s1 .tones-r .item2 .tone-img {
+    background-image: url('../images/6/tone-2-r.png');
+  }
+  .sld6 .s1 .tones-r .item3 .tone-img {
+    background-image: url('../images/6/tone-3-r.png');
+  }
+  .sld6 .s1 .tones-r .item4 .tone-img {
+    background-image: url('../images/6/tone-4-r.png');
   }
   .sld6 .s1 .x,
   .sld6 .s1-1 .x,
